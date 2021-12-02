@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import DarkModeContext from "../../../context/DarkModeContext";
 import Lottie from 'react-lottie';
-import animationData from '../../../assets/animation.json'
+import animationData from '../../../assets/animation1.json'
 //Styles
 import "./Header.styles.css";
 import 'animate.css';
@@ -39,24 +39,30 @@ const Header = () => {
 
 
   return (
-    <header className="h-16 flex justify-between items-center z ">
-      <h2 className="ml-10 text-2xl tablet:text-3xl	animate__animated animate__bounceInDown">Github API React</h2>
+    
+     <header className="h-16 flex justify-between items-center z "> 
+       <h2 className="ml-10 text-2xl tablet:text-3xl	animate__animated animate__bounceInDown">Github API React</h2>
 
     
+    <div className='flex w-1/2 h-full'>
     <button  onClick={handleChangeMode}
-    className='relative z-40 h-32 w-32'>
+    className='relative z-40 h-full w-full flex'> 
       <Lottie
-      
+            style={{display: 'flex'}}
             options={defaultOptions}
-            
+            height={'100%'}
+            width={'100%'}
             direction={animationState.direction}
             isStopped={animationState.isStopped}
             isPaused={animationState.isPaused}/>
-      
-      </button>
+      </button> 
+    </div>
+
+   
    
     
     </header>
+    
   );
 };
 

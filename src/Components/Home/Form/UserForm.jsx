@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import DarkModeContext from "../../../context/DarkModeContext";
 
 
 
 const UserForm = ({ handleUserName, handleSearchUser }) => {
+
+  const {darkMode} = useContext(DarkModeContext)
+
+
   return (
     <form
       className="w-full text-center animate__animated animate__bounceInLeft animate__slow 
@@ -12,7 +17,7 @@ const UserForm = ({ handleUserName, handleSearchUser }) => {
       <input
         type="text"
         placeholder="User name"
-        className="p-4 w-2/3 rounded-l-3xl"
+        className={darkMode ? `bg-black p-4 w-2/3 rounded-l-3xl`: ` p-4 w-2/3 rounded-l-3xl`}
         onChange={({ target }) => handleUserName(target)}
       />
       <input
