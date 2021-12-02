@@ -18,7 +18,7 @@ const Header = () => {
     animationData:animationData,
     autoplay: false, 
     rendererSettings: {
-      preserveAspectRatio:"xMidYMid slice"
+      preserveAspectRatio:"xMidYMid meet"
     }
   };
 

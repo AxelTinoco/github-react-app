@@ -29,7 +29,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-4/5 flex flex-col  mx-auto mt-10 h-4/5 ">
+    <div className="w-[95%] sm:w-4/5 flex flex-col  mx-auto mt-10 h-4/5 ">
       <UserForm
         handleUserName={handleUserName}
         handleSearchUser={handleSearchUser}
