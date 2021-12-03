@@ -20,17 +20,9 @@ const GithubUser = ({
 
 
 
-    // const styles = useSpring({
-    //   loop: true,
-    //   to: [
-    //     { opacity: 1, color: '#ffaaee' },
-    //     { opacity: 0, color: 'rgb(14,26,19)' },
-    //   ],
-    //   from: { opacity: 0, color: 'red' },
-    // })
 
   return (
-    <div className=" p-2 m-auto border">
+    <div className=" p-2 m-auto border rounded-2xl animate__animated animate__bounceInUp animate__slow">
       <div className="flex justify-between items-center p-2 w-full ">
        <div className='flex border border-black rounded-full'>
        <img src={avatar} alt={github} className="w-24 h-24 rounded-full border shadow-2xl" />

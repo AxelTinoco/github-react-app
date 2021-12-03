@@ -13,9 +13,11 @@ const Home = () => {
 
   //Funciones
   const handleUserName = ({ value }) => {
-    setUserName(value);
+    
+      setUserName(value);
   };
 
+  
   const handleSearchUser = async e => {
     e.preventDefault();
     setUserInformation(null);
@@ -23,10 +25,16 @@ const Home = () => {
     const API = `https://api.github.com/users/${userName}`;
     const response = await fetch(API);
     const result = await response.json();
-    console.log(result);
     setUserInformation(result);
     setLoader(false);
+    if (typeof(userInformation?.login) === undefined) {
+      setUserInformation(null)
+      console.log("error")
+    }
   };
+
+  
+
 
   return (
     <div className="w-[95%] sm:w-4/5 flex flex-col  mx-auto mt-10 h-4/5 ">

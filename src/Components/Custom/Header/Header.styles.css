@@ -1,3 +1,7 @@
 .animate__animated.animate__bounceInDown{
     --animate-duration: 2s;
   }
+  button { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+  Lottie {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }

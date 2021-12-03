@@ -21,7 +21,6 @@ const Followers = () => {
       );
       const result = await response.json();
       setFollowers(result);
-      console.log(result);
     };
     handleUserFollowers();
     setLoader(false);
