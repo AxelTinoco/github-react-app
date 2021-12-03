@@ -1,10 +1,12 @@
 import React from "react";
-
+import { Player } from '@lottiefiles/react-lottie-player'
 const Loader = () => {
   return (
-    <div>
-      <p>Cargando...</p>
-    </div>
+    <Player
+      
+      src='https://assets10.lottiefiles.com/packages/lf20_OdNgAj.json'>
+
+    </Player>
   );
 };
 

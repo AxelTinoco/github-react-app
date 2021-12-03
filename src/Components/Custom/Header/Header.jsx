@@ -40,11 +40,11 @@ const Header = () => {
 
   return (
     
-     <header className="h-16 flex justify-between items-center "> 
-       <h2 className="ml-10 text-2xl tablet:text-3xl	animate__animated animate__bounceInDown">Github API React</h2>
+     <header className="h-16 flex justify-between items-center w-full flex-row p-2"> 
+       <h2 className="ml-10 text-2xl tablet:text-3xl	animate__animated animate__bounceInDown w-1/2">Github API React</h2>
 
     
-    <div className='flex w-1/2 h-full'>
+    <div className='flex w-32 h-full justify-end'>
     <button  onClick={handleChangeMode}
     className='relative z-40 h-full w-full flex focus:outline-none hover:outline-none'> 
       <Lottie
